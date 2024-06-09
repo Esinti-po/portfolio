@@ -1,94 +1,176 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="styles.css"/>
-    
-        <title>Esinti's portfolio</title>
-        
-    </head>
-    <body>
-        <div id="header">
-            <div class="container">
-                <nav>
-                    <img src="images/logo.png"class="logo" alt="logo image" />
-                    <ul>
-                        <li>
-                            <a href="Home">Home</a>
-                            <a href="About">About</a>
-                            <a href="Services">Services</a>
-                            <a href="Projects">Projects</a>
-                            <a href="Contact">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header-text">
-                    <p>SOFTWARE DEVELOPER</p>
-                    <h1>Hi, I am Esinti, a full stack developer, specializing in both mobile and web development. </h1>
-                    
-                </div>
-            </div>
-            
-        </div>
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p>my description</p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links"onclick="opentab('experience)">Experience</p>
-                            <p class="tab-links"onclick="opentab('education)">Education</p>
-                            
-                        </div>
-                        
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>UI/UX</span><br>Designing web/app interfaces</li>
-                                  <li><span>UI/UX</span><br >Designing web/app interfaces</li>
-                                    <li><span>UI/UX</span><br >Designing web/app interfaces</li>
-                                      <li><span>UI/UX</span><br>Designing web/app interfaces</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents"id="experience">
-                            <ul>
-                                <li><span>UI/UX</span><br>Designing web/app interfaces</li>
-                                  <li><span>UI/UX</span><br >Designing web/app interfaces</li>
-                                    <li><span>UI/UX</span><br >Designing web/app interfaces</li>
-                                      <li><span>UI/UX</span><br>Designing web/app interfaces</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents"id="education">
-                            <ul>
-                                <li><span>UI/UX</span><br>Designing web/app interfaces</li>
-                                  <li><span>UI/UX</span><br >Designing web/app interfaces</li>
-                                    <li><span>UI/UX</span><br >Designing web/app interfaces</li>
-                                      <li><span>UI/UX</span><br>Designing web/app interfaces</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                </div>
-                
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Esinti's Portfolio</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li>
+                        <a href="#header">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>SOFTWARE DEVELOPER</p>
+                <h1>Hi, I am Esinti, a full stack developer, specializing in both mobile and web development.</h1>
+                <a href="#" download class="btn btn2">Download CV</a>
             </div>
         </div>
-        
-        <script>
-            var tablinks= document.getElementbyClassName("tab-links");
-            var tabcontents= document.getElementbyClassName("tab-contents");
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link");
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementbyId(tabname).classList.add("active-tab");
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"></div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My description</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Some random text</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Mobile Application Design</h2>
+                    <p>Some random text</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX</h2>
+                    <p>Some random text</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h2 class="sub-title">My Projects</h2>
+            <div class="projects-list">
+                <div class="projects">
+                    <img src="images/project1" alt="">
+                    <div class="layer">
+                        <h3>Business Management App</h3>
+                        <p>An app that helps business owners manage their stock, sales, and expenses.</p>
+                        <a href="#">View Demo</a>
+                    </div>
+                </div>
+                <div class="projects">
+                    <img src="images/project1" alt="">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>An app that helps business owners manage their stock, sales, and expenses.</p>
+                        <a href="#">View Demo</a>
+                    </div>
+                </div>
+                <div class="projects">
+                    <img src="images/project1" alt="">
+                    <div class="layer">
+                        <h3>Website for an Organization</h3>
+                        <p>An app that helps business owners manage their stock, sales, and expenses.</p>
+                        <a href="#">View Demo</a>
+                    </div>
+                </div>
+            </div>
+            <a class="btn" href="#">See More</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-info">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> faithesinti@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 0740400148</p>
+                    <div class="social-icons"></div>
+                </div>
+                <div class="contact-form">
+                    <form action="" method="get" accept-charset="utf-8">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" id="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Esinti Faith</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
             }
-        </script>
-    </body>
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
 </html>
